@@ -1,0 +1,85 @@
+#counters {
+
+  .counters-container {
+    color: $main-color;
+
+    .counter-item {
+      text-align: center;
+      //padding: 55px 35px 45px;
+
+      h2 {
+        font-family: $primary-font-family;
+        font-size: 2.7rem;
+        margin: 5px 0 0;
+        line-height: 3rem;
+        white-space: nowrap;
+      }
+
+      .description {
+        font-family: $secondary-font-family-medium;
+        font-size: 0.85rem;
+      }
+
+      .icon-container {
+        display: inline-block;
+        background: url($icons_dir + 'counters.png') no-repeat;
+        overflow: hidden;
+        text-indent: -9999px;
+        text-align: left;
+      }
+
+      .places {
+        background-position: -5px -0px;
+        width: 112px;
+        height: 63px;
+        //margin-bottom: 5px;
+      }
+      .events {
+        background-position: -5px -126px;
+        width: 63px;
+        height: 63px;
+      }
+      .spectators {
+        background-position: -5px -194px;
+        width: 48px;
+        height: 63px;
+      }
+      .personal {
+        background-position: -5px -63px;
+        width: 64px;
+        height: 63px;
+      }
+    }
+  }
+
+  //------adaptivity styles-----
+  .counters-row {
+    justify-content: center;
+    padding: 55px 0 45px;
+
+    .counter-item {
+      -webkit-transform: scale(0.75, 0.75);
+      -moz-transform: scale(0.75, 0.75);
+      -ms-transform: scale(0.75, 0.75);
+      -o-transform: scale(0.75, 0.75);
+      transform: scale(0.75, 0.75);
+    }
+
+  @media (min-width: 768px) {
+      justify-content: space-between;
+      padding: 55px 40px 45px;
+
+      .counter-item {
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+      }
+    }
+
+  }
+}
+
+
+

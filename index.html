@@ -1,37 +1,687 @@
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Slavutich Arena</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <!--<link rel="apple-touch-icon" href="icon.png">-->
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/boilerplate.css">
+    <link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css">
+    <!--________Owl Carousel______-->
+    <!--<link rel="stylesheet" href="libs/owl_carousel/animate.css">-->
+    <link rel="stylesheet" href="libs/owl_carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/liCover/liCover.css">
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!--________main compiled styles______-->
+    <link rel="stylesheet" href="css/main.css">
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!--________SCRIPTS______-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+
+    <!--________slider scripts______-->
+    <script src="libs/owl_carousel/owl.carousel.min.js"></script>
+
+    <!--________responsive images scripts______-->
+    <script src="libs/liCover/jquery.liCover.js"></script>
+
+    <style type="text/css">
+        /*#slider, .slide  {height: 760px; width: 100%; }*/
+    </style>
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<div id="main-overlay"></div>
+
+<div class="page-wrapper">
+    <!--===========================Header==================================-->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <!--toggle content begin-->
+            <nav>
+                <ul class="main-navbar flex-row flex-row-wrap">
+                    <li>
+                        <a href="#">СТАДІОН</a>
+                        <div class="sub-menu">
+                            <ul class="list-wrapper">
+                                <li><a href="#">ПРО СТАДІОН</a></li>
+                                <li><a href="#">ВЕЛИЧНЕ МИНУЛЕ</a></li>
+                                <li><a href="#">ПРАВИЛА ПОВЕДІНКИ НА СТАДІОНІ</a></li>
+                            </ul>
+                            <img src="img/stadium-small-1.jpg" class="" alt="stadium image">
+                        </div>
+                    </li>
+                    <li><a href="#">ПОСЛУГИ</a></li>
+                    <li><a href="#">НОВИНИ</a></li>
+                    <li><a href="#">ПОДІЇ</a></li>
+                    <li><a href="#">МЕДІА</a></li>
+                    <li><a href="#">ПАРТНЕРИ</a></li>
+                    <li><a href="#">КОНТАКТИ</a></li>
+                    <li><a href="#">МФК &laquo;МЕТАЛУРГ&raquo;</a>
+                        <div class="sub-menu">
+                            <ul class="list-wrapper">
+                                <li><a href="#">ПРО СТАДІОН</a></li>
+                                <li><a href="#">ВЕЛИЧНЕ МИНУЛЕ</a></li>
+                                <li><a href="#">ПРАВИЛА ПОВЕДІНКИ НА СТАДІОНІ</a></li>
+                            </ul>
+                            <img src="img/stadium-small-1.jpg" class="" alt="stadium image">
+                        </div>
+                    </li>
+                    <li><a href="#">#СЛАВУТИЧ АРЕНА</a>
+                        <div class="sub-menu">
+                            <ul class="list-wrapper">
+                                <li><a href="#">ПРО СТАДІОН</a></li>
+                                <li><a href="#">ВЕЛИЧНЕ МИНУЛЕ</a></li>
+                                <li><a href="#">ПРАВИЛА ПОВЕДІНКИ НА СТАДІОНІ</a></li>
+                            </ul>
+                            <img src="img/stadium-small-1.jpg" class="" alt="stadium image">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!--_____buttons __________-->
+            <div class="operational-buttons-wrapper">
+                <button type="button" class="standard-button hidden1" name="search-button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+
+                <div class="lang-menu">
+                    <button type="button" class="long-button" name="select-lang">УКР
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="lang-list">
+                        <li>
+                            <a href="#" class="long-button lang-button">УКР</a>
+                        </li>
+                        <li>
+                            <a href="#" class="long-button lang-button">РУС</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <form method="get" action="#" role="search" class="hidden" name="search-form">
+                <i class="fa fa-search form-search-icon" aria-hidden="true"></i>
+                <input type="text" class="" placeholder="ПОШУК">
+                <button type="button" class="simple-button" name="close-search-button">
+                    <i class="fa fa-times 1fa-2x" aria-hidden="true"></i>
+                </button>
+                <button type="submit" class="hidden" name="search-submit"><i>submit</i></button>
+            </form>
+
+            <!--_______________mobile-menu_____________-->
+            <button type="button" name="open-menu-button" class="simple-button"><i class="fa fa-bars fa-2x"
+                                                                                   aria-hidden="true"></i></button>
+            <div id="header-collapse-menu">
+
+                <header class="flex-row-between">
+                    <div class="buttons-menu ">
+                        <button type="button" class="long-button" name="collapse-select-lang">УКР
+                            <i class="fa fa-angle-right 1fa-lg" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="long-button hidden collapse-lang-button" name="">РУС</button>
+
+                        <button type="button" class="standard-button" name="search-button">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <button type="button" class="simple-button " name="close-menu-button">
+                        <i class="fa fa-times 1fa-3x" aria-hidden="true"></i>
+                    </button>
+
+                    <form method="get" action="#" role="search" class="hidden" name="mobile-search-form">
+                        <i class="fa fa-search form-search-icon" aria-hidden="true"></i>
+                        <input type="text" class="" placeholder="ПОШУК">
+                        <button type="button" class="simple-button" name="close-search-button">
+                            <span class="close-icon" aria-hidden="true">&#x2715;</span>
+                        </button>
+                        <button type="submit" class="hidden" name="search-submit"><i>submit</i></button>
+                    </form>
+                </header>
+                <section class="menu-content">
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-element-title flex-row-between">
+                                <a href="#">СТАДІОН</a>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="sub-menu hidden1">
+                                <ul class="list-wrapper">
+                                    <li><a href="#">ПРО СТАДІОН</a></li>
+                                    <li><a href="#">ВЕЛИЧНЕ МИНУЛЕ</a></li>
+                                    <li><a href="#">ПРАВИЛА ПОВЕДІНКИ НА СТАДІОНІ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-element-title flex-row-between">
+                                <a href="#">ПОСЛУГИ</a>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="sub-menu hidden1">
+                                <ul class="list-wrapper">
+                                    <li><a href="#">ПРО ПОСЛУГИ</a></li>
+                                    <li><a href="#">ВЕЛИЧНЕ МИНУЛЕ</a></li>
+                                    <li><a href="#">ПРАВИЛА ПОВЕДІНКИ НА СТАДІОНІ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-element-title flex-row-between">
+                                <a href="#">НОВИНИ</a>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="sub-menu hidden1">
+                                <ul class="list-wrapper">
+                                    <li><a href="#">НОВИНИ 1</a></li>
+                                    <li><a href="#">НОВИНИ 2</a></li>
+                                    <li><a href="#">НОВИНИ 3</a></li>
+                                    <li><a href="#">НОВИНИ 4</a></li>
+                                    <li><a href="#">НОВИНИ 5</a></li>
+                                    <li><a href="#">НОВИНИ 6</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">ПОДІЇ</a></li>
+                        <li><a href="#">МЕДІА</a></li>
+                        <li><a href="#">ПАРТНЕРИ</a></li>
+                        <li><a href="#">КОНТАКТИ</a></li>
+                        <li><a href="#">МФК &laquo;МЕТАЛУРГ&raquo;</a></li>
+                        <li><a href="#">#СЛАВУТИЧ АРЕНА</a></li>
+                    </ul>
+                </section>
+                <footer>
+                    <h5 class="uppercase">Ми у соцмережах</h5>
+                    <div class="social-links ">
+                        <a href="#" class="social facebook">
+                            <i class="fa fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="#" class="social instagram">
+                            <i class="fa fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
+                </footer>
+
+
+            </div>
+
+
+        </div>
+
+    </header>
+    <!--===========================Slider==================================-->
+    <section id="slider" class="owl-carousel">
+        <div class="slide">
+            <img src="img/slide-1.jpg" alt="slide-1.jpg error">
+        </div>
+        <div class="slide">
+            <img src="img/slide-2.jpg" alt="slide-2.jpg error">
+        </div>
+        <div class="slide">
+            <img src="img/slide-3.jpg" alt="slide-3.jpg error">
+        </div>
+    </section>
+    <!--=========================== Counters ==================================-->
+    <section id="counters" class="counters-wrapper">
+        <div class="container counters-container ">
+            <div class="counters-row flex-row-between flex-row-wrap">
+                <div class="counter-item col-xs-6 col-sm-3 col-md-2">
+                    <div class="icon-container places"></div>
+                    <h2 class="counter uppercase">12 000</h2>
+                    <div class="description uppercase">місць</div>
+                </div>
+                <div class="counter-item col-xs-6 col-sm-3 col-md-2">
+                    <div class="icon-container events"></div>
+                    <h2 class="counter uppercase">2 450</h2>
+                    <div class="description uppercase">проведених заходів</div>
+                </div>
+                <div class="counter-item col-xs-6 col-sm-3 col-md-2">
+                    <div class="icon-container spectators"></div>
+                    <h2 class="counter uppercase">4 000+</h2>
+                    <div class="description uppercase">глядачів у день</div>
+                </div>
+                <div class="counter-item col-xs-6 col-sm-3 col-md-2">
+                    <div class="icon-container personal"></div>
+                    <h2 class="counter uppercase">120</h2>
+                    <div class="description uppercase">людей персоналу</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================== Parallax ==================================-->
+    <section id="parallax" class="parallax-wrapper">
+        <div class="container parallax-container ">
+            <div class="parallax-row flex-row-between flex-row-wrap">
+                <!--______events___________-->
+                <div class="events-wrapper flex-column col-xs-12 col-lg-8">
+                    <header class="block-header events-header flex-row-between align-center">
+                        <h1 class="uppercase">Події</h1>
+                        <a href="#" role="button" class="uppercase" name="all-news-button">Усі події</a>
+                    </header>
+                    <div class="event-items-container flex-row-between flex-row-wrap ">
+                        <article class="event-item col-xs-12 col-sm-6">
+                            <img src="img/event-1.jpg" alt="event image">
+                            <div class="event-description-wrapper">
+                                <header>
+                                    <time datetime="2017-08-22 18:00" class="flex-row-between">
+                                        <span>22<span class="month"> серпня</span></span>
+                                        <span>18:00</span>
+                                    </time>
+                                </header>
+                                <section>
+                                    <h3 class="title uppercase">Концерт &laquo;океан ельзи&raquo;</h3>
+                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                                        nesciunt odio repellendus rerum. Assumenda debitis dolores ipsa itaque iure
+                                        quas. Amet ipsam natus neque nisi nobis recusandae saepe sit veniam! Animi atque
+                                        cupiditate dolore dolores excepturi explicabo...</p>
+                                </section>
+                                <footer>
+                                    <p class="specific-info uppercase">Вартість квитка: <span>250 - 400 грн</span></p>
+                                    <a href="#" name="buy-button" class="uppercase">
+                                        <div class="button-container">Придбати квиток</div>
+                                    </a>
+                                </footer>
+                            </div>
+                        </article>
+                        <article class="event-item col-xs-12 col-sm-6">
+                            <img src="img/event-2.jpg" alt="event image">
+                            <div class="event-description-wrapper">
+                                <header>
+                                    <time datetime="2017-09-02 19:00" class="flex-row-between">
+                                        <span>2<span class="month"> вересня</span></span>
+                                        <span>19:00</span>
+                                    </time>
+                                </header>
+                                <section>
+                                    <h3 class="title uppercase">Чемпіонат україни &laquo;металург/гірник&raquo;</h3>
+                                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                                        nesciunt odio repellendus rerum. Assumenda debitis dolores ipsa itaque iure
+                                        quas. </p>
+                                </section>
+                                <footer>
+                                    <p class="specific-info uppercase">Вартість квитка: <span>150 - 300 грн</span></p>
+                                    <a href="#" name="buy-button" class="uppercase">
+                                        <div class="button-container">Придбати квиток</div>
+                                    </a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--______last news___________-->
+                <div class="news-wrapper flex-column col-xs-12 col-lg-4">
+                    <header class="block-header news-header flex-row justify-start">
+                        <h1 class="uppercase ">Останні новини</h1>
+                    </header>
+                    <div class="news-items-container flex-column">
+                        <article class="news-item">
+                            <header class="flex-row-between align-center">
+                                <time datetime="2017-08-03" class="uppercase">3 серпня 2017</time>
+                                <a href="#" class="uppercase">
+                                    <div class="button-container">стадіон</div>
+                                </a>
+                            </header>
+                            <section>
+                                <h4 class="title uppercase">презентація міського футбольного клубу &laquo;металург&raquo;</h4>
+                                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                                    nesciunt odio repellendus rerum. Assumenda debitis dolores ipsa itaque iure
+                                    quas. Lorem ipsum dolor sit amet... </p>
+                            </section>
+                            <footer>
+                                <a href="#" class="uppercase" name="read-button">Читати</a>
+                            </footer>
+                        </article>
+                        <article class="news-item">
+                            <header class="flex-row-between align-center">
+                                <time datetime="2017-08-03" class="uppercase">3 серпня 2017</time>
+                                <a href="#" class="uppercase">
+                                    <div class="button-container">МФК &laquo;Металург&raquo;</div>
+                                </a>
+                            </header>
+                            <section>
+                                <h4 class="title uppercase">Команда ЗШФ "Металург" о-16 стали віце-чемпіонами
+                                    України</h4>
+                                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                                    nesciunt odio repellendus rerum. Assumenda debitis dolores ipsa itaque iure
+                                    quas. Lorem ipsum dolor sit amet... </p>
+                            </section>
+                            <footer>
+                                <a href="#" class="uppercase" name="read-button">Читати</a>
+                            </footer>
+                        </article>
+                        <article class="news-item">
+                            <header class="flex-row-between align-center">
+                                <time datetime="2017-08-03" class="uppercase">3 серпня 2017</time>
+                                <a href="#" class="uppercase">
+                                    <div class="button-container">тренувальна база</div>
+                                </a>
+                            </header>
+                            <section>
+                                <h4 class="title uppercase">Таблиця результатів турніру ААФУ</h4>
+                                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                                    ... </p>
+                            </section>
+                            <footer>
+                                <a href="#" class="uppercase" name="read-button">Читати</a>
+                            </footer>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--=========================== Social-Contacts ==================================-->
+    <section id="social-net" class="social-net-wrapper">
+        <div class="social-net-container">
+            <h2 class="title uppercase">Будь у курсі всіх подій</h2>
+            <p class="description">Аби бути у курсі всіх подій, які відбуваються в житті &laquo;Славутич-арени&raquo;
+                стеж за нами в соцмережах</p>
+            <div class="links-wrapper">
+                <a href="#" class="social facebook"><i></i></a>
+                <a href="#" class="social instagram"><i></i></a>
+            </div>
+        </div>
+    </section>
+    <!--=========================== Services ==================================-->
+    <section id="services">
+        <div class="container services-container flex-column align-center">
+            <h2 class="uppercase">Наші послуги</h2>
+            <div class="services-row flex-row-between flex-row-wrap justify-center">
+                <article class="service-item col-xs-12 col-md-4">
+                    <div class="service-item-wrapper">
+                        <img src="img/service-1.jpg" alt="service-1">
+                        <div class="service-caption">
+                            <h4 class="title uppercase">відпочинок</h4>
+                            <div class="description-wrapper">
+                                <p class="description">Бізнес-конференції, майстер-класи, оренда</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="service-item col-xs-12 col-md-4">
+                    <div class="service-item-wrapper">
+                        <img src="img/service-2.jpg" alt="service-1">
+                        <div class="service-caption">
+                            <h4 class="title uppercase">Бізнес</h4>
+                            <div class="description-wrapper">
+                                <p class="description">business caption </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="service-item col-xs-12 col-md-4">
+                    <div class="service-item-wrapper">
+                        <img src="img/service-3.jpg" alt="service-1">
+                        <div class="service-caption">
+                            <h4 class="title uppercase">Спорт</h4>
+                            <div class="description-wrapper">
+                                <p class="description">Sport caption</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--=========================== Gallery ==================================-->
+    <section id="gallery">
+        <div class="flex-row gallery-row">
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-1.jpg" alt="gallery-img">
+            </div>
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-2.jpg" alt="gallery-img">
+            </div>
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-3.jpg" alt="gallery-img">
+            </div>
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-4.jpg" alt="gallery-img">
+            </div>
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-5.jpg" alt="gallery-img">
+            </div>
+
+        </div>
+        <div class="flex-row gallery-row">
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-6.jpg" alt="gallery-img">
+            </div>
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-7.jpg" alt="gallery-img">
+            </div>
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-8.jpg" alt="gallery-img">
+            </div>
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-9.jpg" alt="gallery-img">
+            </div>
+            <div class="gallery-img-wrapper col-xs-12 col-sm-6 col-md-3 col-lg-20">
+                <img src="img/galery-10.jpg" alt="gallery-img">
+            </div>
+
+        </div>
+
+    </section>
+    <!--=========================== Parteners ==================================-->
+    <section id="partners">
+        <div class="container partners-slider owl-carousel">
+            <div class="slide partner-1"><a href="#"></a></div>
+            <div class="slide partner-2"><a href="#"></a></div>
+            <div class="slide partner-3"><a href="#"></a></div>
+        </div>
+        <!--<div id="custom-nav"></div>-->
+    </section>
+    <!--=========================== Map ==================================-->
+    <section id="map">
         <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+            var slavutich = {lat: 47.859424, lng: 35.097032};
+            var map;
+            var mapDiv = document.getElementById('map');
+
+            function initMap() {
+                map = new google.maps.Map(mapDiv, {
+                    center: slavutich,
+                    zoom: 16
+                });
+                var marker = new google.maps.Marker({
+                    position: slavutich,
+                    map: map,
+                    title: 'Slavutich-Arena'
+                });
+
+                google.maps.event.addDomListener(window, 'resize', function () {
+//                    google.maps.event.trigger(map, "resize");
+                    var documentWidth = document.documentElement.clientWidth;
+
+                    setTimeout(function () {
+                        map.setCenter(slavutich);
+                        documentWidth < 768 ? map.setZoom(15) : map.setZoom(16);
+//                        console.log('Map was resized!');
+                    }, 500);
+                });
+            }
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+
+        <script src='https://maps.googleapis.com/maps/api/js?&callback=initMap' async defer></script>
+    </section>
+    <!--=========================== Footer ===============================-->
+    <footer id="footer">
+        <div class="container footer-container">
+            <button type="button" name="top-button"><i class="fa fa-angle-up fa-2x"></i></button>
+            <div class="flex-row-between flex-row-wrap">
+                <div class="footer-info-wrapper col-xs-12 col-lg-9">
+                    <div class="flex-row-between flex-row-wrap">
+                        <div class="footer-info-item 1col-xs-12 1col-md-4">
+                            <h5 class="footer-info-title ">Стадіон</h5>
+                            <ul class="footer-info-menu">
+                                <li><a href="#">про стадіон</a></li>
+                                <li><a href="#">пп на стадіоні</a></li>
+                                <li><a href="#">афіша</a></li>
+                                <li><a href="#">стадіон для відпочинку</a></li>
+                                <li><a href="#">стадіон для бізнесу</a></li>
+                                <li><a href="#">стадіон для спорту</a></li>
+                                <li><a href="#">мфк &laquo;металург&raquo;</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item 1col-xs-12 1col-md-4">
+                            <h5 class="footer-info-title ">Новини</h5>
+                            <ul class="footer-info-menu">
+                                <li><a href="#">Новини стадіону</a></li>
+                                <li><a href="#">Новини мфк &laquo;металург&raquo;</a></li>
+                                <li><a href="#">новини тренувальної бази</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info-item-contacts 1col-xs-12 1col-md-4">
+                            <h5 class="footer-info-title contacts-title">контакти</h5>
+                            <ul class="footer-info-menu">
+                                <li>вул. Валерія Лобановського, 21, <br> 69006, м. Запоріжжя</li>
+                            </ul>
+                            <ul class="footer-info-menu">
+                                <li class="phone">
+                                    <i class="fa fa-mobile fa-lg phone-icon" aria-hidden="true"></i>
+                                    (061) 236-73-44
+                                </li>
+                                <li class="normalcase"><a href="mailto:#">slavutich_arena@ukr.net</a></li>
+                            </ul>
+                            <ul class="footer-info-menu ">
+                                <li class="social-links">
+                                    <a href="#" class="social facebook">
+                                        <i class="fa fa-facebook fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="social instagram">
+                                        <i class="fa fa-instagram fa-lg"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-gallery 1col-xs-12 1col-lg-3">
+                    <h5 class=" gallery-title">#славутичарена</h5>
+                    <div class="gallery-row flex-row-between">
+                        <img src="img/footer-gallery/1.jpg" alt="gallery-image-1">
+                        <img src="img/footer-gallery/2.jpg" alt="gallery-image-2">
+                        <img src="img/footer-gallery/3.jpg" alt="gallery-image-3">
+                    </div>
+                    <div class="gallery-row flex-row-between">
+                        <img src="img/footer-gallery/4.jpg" alt="gallery-image-4">
+                        <img src="img/footer-gallery/5.jpg" alt="gallery-image-5">
+                        <img src="img/footer-gallery/6.jpg" alt="gallery-image-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <div class="copyright-row flex-row-between flex-row-wrap">
+                <div class="uppercase flex-row">
+                    <p>розроблено у </p>
+                    <i class='zengineers-logo'></i></div>
+                <div class="uppercase">&copy; Стадіон &laquo;Славутич Арена&raquo;, 2017</div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+
+<!--___________ LICOVER OPTIONS (slider image positioned) __________-->
+<script>
+    $(document).ready(function () {
+        $('#slider img').liCover({
+            parent: $('#slider'),
+            position: 'absolute',
+            veticalAlign: 'middle',
+            align: 'center',
+            opacity: 0.8
+        })
+    })
+</script>
+
+<!--___________ SLIDER OPTIONS __________-->
+<script>
+    $(document).ready(function () {
+        var owl = $('#slider');
+        owl.owlCarousel({
+//        autoplay: true,
+//        autoplayHoverPause: true,
+//        margin: 281,
+//        nav: true,
+            loop: true,
+            dots: true,
+            mouseDrag: false,
+//        animateIn: 'fadeIn',
+//        animateOut: 'slideOutDown',
+            smartSpeed: 1250,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+        //---------partners-slider---------
+        var partnersOwl = $('.partners-slider');
+        partnersOwl.owlCarousel({
+        autoplay: true,
+        autoplayHoverPause: true,
+//        margin: 281,
+            info: true,
+            nav: true,
+            navText: ["<i class='fa fa-angle-left fa-2x'>",
+                "<i class='fa fa-angle-right fa-2x'>"],
+//            navContainer: '#custom-nav',
+//            navClass: [ 'owl-prev', 'owl-next' ],
+            loop: true,
+//            dots: true,
+            mouseDrag: false,
+//        animateIn: 'fadeIn',
+//        animateOut: 'slideOutDown',
+            smartSpeed: 1250,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                }
+
+            }
+        });
+    })
+</script>
+
+<!--________custom scripts______-->
+<script src="js/main.js"></script>
+
+</body>
 </html>

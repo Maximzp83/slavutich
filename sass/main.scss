@@ -1,0 +1,19 @@
+@import "variables";  /*значения переменных*/
+@import "mixins";
+
+@import "global";  /*глобальные настройки и общие стили*/
+@import "fonts";
+@import "common";  /*общие заготовленные классы */
+
+//------page sections----
+@import "header";
+@import "slider";
+@import "counters";
+@import "parallax";
+@import "social-contacts";
+@import "services";
+@import "gallery";
+@import "parteners";
+@import "map";
+@import "footer";
+

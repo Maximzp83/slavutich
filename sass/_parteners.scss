@@ -1,0 +1,124 @@
+#partners {
+
+  padding: 65px 0;
+  position: relative;
+
+  .partners-slider {
+    position: relative;
+    box-sizing: border-box;
+
+    .owl-stage-outer {
+      //z-index: 25;
+    }
+
+    .slide {
+      height: 100px;
+      max-width: 215px;
+      margin: 0 auto;
+      &:hover {
+        z-index: 15;
+      }
+
+      a {
+        width: 100%;
+        height: inherit;
+        display: inline-block;
+        &:hover {
+          z-index: 25;
+        }
+      }
+    }
+
+    .partner-1 {
+      background: url($partners_dir + "logo_tonus.png") no-repeat center center;
+      &:hover {
+        background: url($partners_dir + "logo_tonus_hover.png") no-repeat center center;
+      }
+    }
+
+    .partner-2 {
+      background: url($partners_dir + "carlsberg-logo.png") no-repeat center center;
+      &:hover {
+        background: url($partners_dir + "carlsberg-logo_hover.png") no-repeat center center;
+      }
+    }
+
+    .partner-3 {
+      background: url($partners_dir + "musin.zp.ua.png") no-repeat center center;
+      &:hover {
+        background: url($partners_dir + "musin.zp.ua.hover.png") no-repeat center center;
+      }
+    }
+
+
+    .owl-nav {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      width: calc(100% - 30px);
+      top: calc( 50% - 20px);
+
+      & > div {
+        display: inline-block;
+        color: #839DBF;
+
+        &:hover {
+          color: $main-color;
+          z-index: 50;
+        }
+
+      }
+      & .owl-prev {
+        padding: 5px 5px 5px 0;
+      }
+      & .owl-next {
+        padding: 5px 0 5px 5px;
+      }
+
+    }
+
+    @media (min-width: 768px) {
+      .owl-nav {
+        display: none;
+      }
+    }
+
+
+
+  }
+
+  #custom-nav {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: calc( 50% - 20px);
+
+    & > div {
+      display: inline-block;
+      color: #839DBF;
+
+      &:hover {
+        color: $main-color;
+        z-index: 50;
+      }
+
+    }
+    & .owl-prev {
+      padding: 5px 5px 5px 0;
+    }
+    & .owl-next {
+      padding: 5px 0 5px 5px;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+    .custom-nav {
+      display: none;
+    }
+  }
+
+
+}

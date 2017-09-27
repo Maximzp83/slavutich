@@ -1,0 +1,26 @@
+{
+  "name": "slavutich",
+  "version": "1.0.0",
+  "description": "slavitich arena football field",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maximzp83/slavutich.git"
+  },
+  "author": "Maxim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maximzp83/slavutich/issues"
+  },
+  "homepage": "https://github.com/Maximzp83/slavutich#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

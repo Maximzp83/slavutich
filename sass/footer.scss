@@ -1,0 +1,234 @@
+#footer {
+  $padding-between-gallery-items: 5px;
+
+  background: $main-color;
+  color: $tertiary-color;
+  padding: 15px 0;
+
+
+
+  .footer-container {
+    padding-bottom: 15px;
+    position: relative;
+
+    button[name="top-button"] {
+      position: absolute;
+      right: 15px;
+      top: -50px;
+        cursor: pointer;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border-style: none;
+      background-color: $secondary-color;
+      box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.25);
+      outline: none;
+
+      &:active {
+        box-shadow: inset 2px 2px 10px 0 rgba(0,0,0,0.25);
+      }
+
+      &:hover {
+        background-color: $main-color;
+      }
+
+      & > i {
+        color: $tertiary-color;
+        padding: 0 0 3px 3px;
+      }
+
+      @media (max-width: 830px) {
+        right: 35px;
+      }
+
+    }
+  }
+
+  .footer-info-wrapper {
+    padding: 0 60px 30px 0;
+    box-sizing: border-box;
+  }
+
+  .footer-info-title {
+    font-family: $primary-font-family;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin: 5px 0;
+
+    &:after {
+      border-bottom: 1px solid $secondary-color;
+      width: 18px;
+      padding-top: 5px;
+      content: "";
+      display: block;
+    }
+  }
+
+  .contacts-title,
+  .gallery-title {
+    font-size: 1.25rem;
+  }
+
+  .footer-info-item {
+    padding: 15px 20px 0 0;
+
+    .footer-info-menu {
+      text-transform: uppercase;
+      line-height: 1.7rem;
+
+      a {
+        color: $tertiary-color;
+        font-size: 0.8rem;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .footer-info-item-contacts {
+    padding: 15px 15px 0 0;
+
+    .footer-info-menu {
+      text-transform: uppercase;
+      line-height: 1.6rem;
+
+      li, a {
+        color: $tertiary-color;
+        font-size: 0.8rem;
+
+      }
+      a:hover {
+        color: $secondary-color;
+      }
+
+      .phone {
+        font-size: 1.3rem;
+        font-family: $primary-font-family;
+        padding-top: 15px;
+
+        .phone-icon {
+          padding-right: 10px;
+        }
+      }
+
+      .social-links {
+        padding-top: 15px;
+
+        .social + .social {
+          margin-left: 5px;
+        }
+
+        .social {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          border: 1px solid $tertiary-color;
+          border-radius: 50%;
+          text-align: center;
+
+          & > i {
+            padding-top: 15px;
+          }
+
+          &:hover {
+            color: $main-color;
+            background-color: $tertiary-color;
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            -o-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+          }
+          &:not(:hover) {
+            color: $tertiary-color;
+            background-color: transparent;
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            -o-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .footer-gallery {
+
+    padding-top: 15px;
+    margin: 0 ;
+
+    @media (min-width: 450px) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1200px) {
+      margin: 0;
+    }
+
+    .gallery-title {
+      font-family: $primary-font-family;
+      text-transform: uppercase;
+      margin: 5px 0 5px;
+    }
+
+    .gallery-row {
+      padding-top: 5px;
+
+      img {
+        padding-right: calc(#{$padding-between-gallery-items} * 0.75);
+
+        & + img {
+          margin-top: 0;
+          padding-left: calc((#{$padding-between-gallery-items} * 0.75) / 2);
+          padding-right: calc((#{$padding-between-gallery-items} * 0.75) / 2);
+        }
+        &:last-child {
+          padding-left: calc(#{$padding-between-gallery-items} * 0.75);
+          padding-right: 0;
+        }
+      }
+
+    }
+  }
+
+  hr {
+    border-color: #274989;
+  }
+
+  .copyright-row {
+    font-size: 0.9rem;
+
+    p {
+      margin: 0;
+    }
+
+    .zengineers-logo {
+      margin-left: 7px;
+      width: 17px;
+      height: 16px;
+      background: url($icons_dir + "zengineers-logo.png") no-repeat center center;
+    }
+
+    @media (max-width: 500px) {
+      & > div {
+        width: 100%;
+        padding: 5px 0;
+        justify-content: center;
+        text-align: center;
+      }
+
+      & > div + div:before {
+        display: block;
+        content: "";
+        width: 18px;
+        border: 1px solid $secondary-color;
+        margin: 0 auto 8px;
+      }
+    }
+
+  }
+
+}

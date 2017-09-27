@@ -1,0 +1,37 @@
+#gallery {
+
+  img {
+    width: 100%;
+  }
+  // > 1200
+
+  @media (max-width: 1200px) {     // < 1200
+    .gallery-row > :nth-child(-n+1) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {     // < 992
+    .gallery-row > :nth-child(-n+2) {
+      display: none;
+    }
+    .gallery-row > :nth-last-child(-n+1) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {     // < 768
+    .gallery-row > :nth-child(-n+2) {
+      display: none;
+    }
+    .gallery-row > :nth-last-child(-n+2) {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+}
